@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Prakt10.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Prakt10"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Вкладка 1" Icon="todd.jpeg">
+            <ShellContent Title="Prakt10" Icon="todd.jpeg" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
+        </Tab>
+        <Tab Title="Вкладка 2" Icon="todd.jpeg">
+            <ShellContent Title="Prakt10" ContentTemplate="{DataTemplate local:NewPage1}"></ShellContent>
+        </Tab>
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prakt10.MainPage"
+             xmlns:local="clr-namespace:Prakt10">
+    <ContentPage.Resources>
+        <Style x:Key="entryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Black"/>
+            <Style.Triggers>
+                <EventTrigger Event="TextChanged">
+                    <local:EntryValidation/>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
+    
+
+    <StackLayout>
+        <Label Text="Введите месяц"></Label>
+        <Entry Style="{StaticResource Key=entryStyle}" x:Name="Entr1" ></Entry>
+        <Button x:Name="Bt1"></Button>
+    </StackLayout>
+
+</ContentPage>

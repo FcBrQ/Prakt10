@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prakt10.NewPage1"
+             Title="Prakt10"
+             xmlns:local="clr-namespace:Prakt10">
+    <ContentPage.Resources>
+        <Style x:Key="radioStyle" TargetType="RadioButton">
+            <Setter Property="TextColor" Value="Red"/>
+            <Style.Triggers>
+                <EventTrigger Event="IsChecked">
+                    <local:RadioValidation/>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Frame>
+            <StackLayout>
+                <Label Text="Выберите месяц"></Label>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Январь"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Февраль"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Март"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Апрель"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Май"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Июнь"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Июль"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Август"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Сентябрь"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Октябрь"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Ноябрь"></RadioButton>
+                <RadioButton Style="{StaticResource Key=radioStyle}" Content="Декабрь"></RadioButton>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
